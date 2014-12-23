@@ -1,0 +1,28 @@
+README
+
+This is a resume classification tool that can calculate two scores for a resume based on the relation to the sales and customer service.
+
+To use the tool, we need to first include Apache PDFbox and Apache poi parser.
+
+There are few inputs
+
+pdf - a folder that contains all the resumes, resumes type can be pdf or doc
+
+FileName.txt - contains all the resume document file name, do not include file type
+i.e. 1234
+
+customer_service_scoring_words.txt - contains words that related to customer service with assigned score
+i.e. client service 5
+
+sales_scoring_words.txt - contains words that related to sales with assigned score
+i.e. fundraising 3
+
+stop_words.txt - words that are irrelavent to the algorithm and can be removed.
+
+
+After having these files in the working directory, we can simply compile the jave code and run.
+
+
+
+
+The MoveFiles is a small tool that can move resume files into different folder based on the score. In the code, we can specify which score list the tool will be referencing and also the folders that resumes will be moved into.
